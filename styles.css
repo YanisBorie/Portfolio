@@ -1,0 +1,26 @@
+@import url("https://fonts.cdnfonts.com/css/dekko");
+
+body {
+    background-image: url("Images/test.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+}
+
+li {
+    font-family: dekko;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
