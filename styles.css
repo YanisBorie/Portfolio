@@ -24,3 +24,14 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.presentation {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation img {
+    border: 1px solid black;
+    border-radius: 75% 75% 75% 75%;
+}
