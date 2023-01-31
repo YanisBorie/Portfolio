@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/dekko");
 
 body {
-    background-image: url("Images/test.jpg");
+    background-image: url("../images/test.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
