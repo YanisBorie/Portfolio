@@ -4,20 +4,32 @@ body {
     background-image: url("../images/test.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
 }
 
 body, html {
+    /* Couleur clair
     --nav-color: #FAFAFA;
     --main-color: white;
+    --area-color: #F7F9FC;
     --text-color: black;
     --button-color: #D9D9D9;
     --buttonhover-color: #A6A6A6;
+    --shadow-color: black;
+    --icone-color: black;
+    */
+    --nav-color: #15202B;
+    --main-color: #1E2732;
+    --area-color: #1A242F;
+    --text-color: #F7F9F9;
+    --button-color: #1D9BF0;
+    --buttonhover-color: #188bd7;
+    --shadow-color: #15202B;
+    --icone-color: #188bd7;
 
     margin:0;
     padding:0;
-    display: grid;
-    grid-template-areas: "nav section";
-    grid-template-columns: 1fr 2fr;
 }
 
 nav {
@@ -26,48 +38,77 @@ nav {
     left: 0px;
     top: 0px;
     bottom: 0px;
-    width: 22vw;
-    grid-area: nav;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     height: 100vh;
     text-align: center;
+    box-shadow: 2px 2px 20px var(--shadow-color);
+    color: var(--text-color);
 }
 
-nav ul,li {
+nav h1,h2 {
+    font-family: Candara;
+    margin: 6px;
+}
+
+nav ul,li,button {
     font-family: dekko;
-    font-size: 24px;
+    font-size: 20px;
     list-style: none;
 }
 
-nav li {
+nav button {
     background-color: var(--button-color);
     border-radius: 5rem;
+    border: solid 0px;
     height: 50px;
-    width: 250px;
+    width: 200px;
     vertical-align: middle;
     margin-bottom: 10px;
 }
 
-nav li:hover {
+nav button:hover {
     background-color: var(--buttonhover-color);
     color: white;
+    transition-duration: 500ms;
 }
 
-nav a {
+nav button a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.presentation {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--main-color);
-    grid-area: section;
+    width: 100%;
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: var(--area-color);
+    color: var(--text-color);
     padding: 20px;
-    width: 100vh;
+    margin: 50px;
+    width: 850px;
+    font-size: 17px;
+    font-family: Candara;
+}
+
+section h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 nav img {
-    border: 5px solid black;
+    border: 5px solid var(--icone-color);
     border-radius: 75% 75% 75% 75%;
     width: 180px;
     height: 180px;
