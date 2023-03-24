@@ -99,6 +99,7 @@ section {
     width: 850px;
     font-size: 17px;
     font-family: Candara;
+    border-radius: 2rem;
 }
 
 section h1 {
@@ -115,4 +116,21 @@ nav img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
+
+.parcours article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parcours article div {
+    border-left: solid 1px --icone-color;
+}
+
+.parcours article fieldset {
+    border: solid 0px;
+    border-left: solid 3px;
+    border-radius: 0.75rem;
+    height: 100px;
+    max-width: 350px;
 }
