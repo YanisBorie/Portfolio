@@ -1,9 +1,12 @@
 @import url("https://fonts.cdnfonts.com/css/dekko");
 
 body {
+    /*
     background-image: url("../images/test.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    */
+    background-color: var(--main-color);
     display: flex;
     flex-direction: row;
 }
@@ -45,6 +48,10 @@ nav {
     text-align: center;
     box-shadow: 2px 2px 20px var(--shadow-color);
     color: var(--text-color);
+
+    /*Animation de la nav bar*/
+    animation-duration: 3s;
+    animation-name: slidein, fondu;
 }
 
 nav h1,h2 {
@@ -100,6 +107,10 @@ section {
     font-size: 17px;
     font-family: Candara;
     border-radius: 2rem;
+
+    /*Animation de la section*/
+    animation-duration: 5s;
+    animation-name: fondu;
 }
 
 section h1 {
@@ -131,6 +142,43 @@ nav img {
     border: solid 0px;
     border-left: solid 3px;
     border-radius: 0.75rem;
-    height: 100px;
+    height: 150px;
     max-width: 350px;
+}
+
+.projets article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projets article a img {
+    margin: 15px;
+    border: solid 3px var(--text-color);
+    border-radius: 0.75rem;
+    height: 180px;
+    width: 180px;
+}
+
+.projets article a img:hover {
+    opacity: 0.5;
+    transition-duration: 500ms;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -400px;
+    }
+    to {
+        left: 0vw;
+    }
+}
+
+@keyframes fondu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

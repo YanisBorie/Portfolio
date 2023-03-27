@@ -1,0 +1,423 @@
+header
+{
+	background-color: #000;
+	width: 100%;
+	height: 150px;
+	display: block;
+	box-shadow: 0px 10px 20px black;
+}
+body
+{
+	background-color: #f6f6f6;
+	margin: 0;
+	padding: 0;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.titre1
+{
+	font-size: 60px;
+    font-family: anton;
+	margin-left: 50px;
+	padding-top: 35px;
+    text-shadow: white 0px 10px 20px;
+}
+.titre2
+{
+    font-size: 60px;
+    font-family: anton;
+    text-align: center;
+    color: black;
+}
+.titre3
+{
+    font-size: 60px;
+    font-family: anton;
+    text-align: center;
+    color: black;
+    margin-top: 35px;
+}
+.texte1
+{
+    font-size: 18px;
+    font-family: bahnschrift;
+    text-align: center;
+    color: black;
+}
+.texte2
+{
+    font-size: 21px;
+    font-family: bahnschrift;
+    text-align: left;
+    color: black;
+    padding-top: 45px;
+}
+input
+{
+    padding: 15px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 2px 1px black;
+    border-radius: 30px;
+    width: 350px;
+    text-decoration-style: none;
+    font-size: 15px;
+    font-family: georgia;
+    text-align: center;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
+.section1
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    animation: 2.25s top;
+}
+.section2
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    align-items: flex-end;
+}
+.zone1
+{
+    border-radius: 15px;
+    height: 625px;
+    width: 925px;
+    animation: 3s left;
+}
+.zone2
+{
+    border-radius: 15px;
+    height: 625px;
+    width: 850px;
+    animation: 3s right;
+}
+.bouton
+{
+    font-size: 24px;
+    font-family: poppins;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    border: 0px solid black;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.bouton:hover
+{
+    background-color: #313131;
+    cursor: pointer;
+}
+.bouton1
+{
+    font-size: 24px;
+    font-family: poppins;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 15px 40px 15px 40px;
+    margin: auto;
+    border-radius: 30px;
+    border: 0px solid black;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    width: 175px;
+}
+.bouton1:hover
+{
+    background-color: #313131;
+    cursor: pointer;
+}
+nav
+{
+	display:block;
+    background-color: #444;
+    height: 40px;
+    line-height: 40px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 35px;
+}
+nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding-left: 10px;
+}
+nav ul li
+{
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 10px;
+    /*Juste pour rendre le tout plus zôôôôli*/
+    /*Bords arrondis*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    /*Effet de transition au survol de la souris*/
+    -webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+nav ul li a:hover
+{
+    background-color: #222;
+}
+.register
+{
+    font-family: georgia;
+    color: #0094FF;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 500px;
+    cursor: pointer;
+}
+.register:hover
+{
+    color: #0078CE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login
+{
+    font-family: georgia;
+    color: #0094FF;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 500px;
+    cursor: pointer;
+}
+.login:hover
+{
+    color: #0078CE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btnPopupco
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 10px;
+    /*Juste pour rendre le tout plus zôôôôli*/
+    /*Bords arrondis*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    /*Effet de transition au survol de la souris*/
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.btnPopupco:hover
+{
+    background-color: #222;
+}
+.overlayco
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupco
+{
+    margin: 5% auto;
+    width : 40%;
+    height: 75%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.overlayco2
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupco2
+{
+    margin: 10% auto;
+    width : 40%;
+    height: 40%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.btnCloseco
+{
+    float: right;
+    font-size: 60px;
+    cursor: pointer;
+    color: rgb(26, 26, 26);
+}
+.btnPopupins
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 10px;
+    /*Juste pour rendre le tout plus zôôôôli*/
+    /*Bords arrondis*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    /*Effet de transition au survol de la souris*/
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.btnPopupins:hover
+{
+    background-color: #222;
+}
+.overlayins
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupins
+{
+    margin: 5% auto;
+    width : 40%;
+    height: 75%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.overlayins2
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupins2
+{
+    margin: 7% auto;
+    width : 40%;
+    height: 50%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.btnCloseins
+{
+    float: right;
+    font-size: 60px;
+    cursor: pointer;
+    color: rgb(26, 26, 26);
+}
+@keyframes fondu
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes unfondu
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
+}
+@keyframes top
+{
+    from
+    {
+        margin-top: -75%;
+    }
+    to
+    {
+        margin-top: 0%;
+    }
+}
+@keyframes left
+{
+    from
+    {
+        margin-left: -50%;
+    }
+    to
+    {
+        margin-left: 0%;
+    }
+}
+@keyframes right
+{
+    from
+    {
+        margin-right: -50%;
+    }
+    to
+    {
+        margin-right: 0%;
+    }
+}

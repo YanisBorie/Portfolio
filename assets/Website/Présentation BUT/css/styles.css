@@ -1,0 +1,450 @@
+::selection{
+    color: white;
+    background: var(--highlight-color); 
+}
+
+::-moz-selection{
+    color: white;
+    background: orange;
+}
+
+a:hover{
+    color: black;
+    transition: 300ms;
+}
+
+main a:hover{
+    animation: 0.8s link;
+    font-size: var(--animation-link-max);
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Light.eot');
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.ttf') format('truetype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.svg#SFProDisplay-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Semibold.eot');
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.ttf') format('truetype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.svg#SFProDisplay-Semibold') format('svg');
+}
+
+body{
+    margin:0;
+    padding:0;
+    
+    background: url(../images/iut.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+    font-family: "SF Pro Display", sans-serif;
+    font-size: large;
+    color: var(--text-color);
+
+    --header-color: rgb(61, 61, 61);
+    --text-color: aliceblue;
+    --highlight-color: #e3541a;
+
+    --width-input: 250px;
+    --width-textarea: 450px;
+
+    --width-map: 375px;
+    --height-map: 225px;
+
+    --animation-link-mini: 1.1em;
+    --animation-link-max: 1.15em;
+}
+
+.border{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+header {
+    padding:0 1rem;
+    align-items: center;
+    text-align: center;
+
+    --height: 100px;
+    height: var(--height);
+    border-bottom: 1px solid black;
+    background: var(--header-color);
+    
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+header img {
+    height: calc(var(--height) - 10px);
+}
+
+header a {
+    color: var(--text-color);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+
+    height: 2.5rem;
+    font-size: 1.1em;
+    background: var(--header-color);
+    color: aliceblue;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav a{
+    color: var(--text-color);
+    height: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    color: black;
+    background: aliceblue;
+    background-clip: content-box;
+    padding: 10px 15vw;
+    color: black;
+}
+
+main h1{
+    text-align: center;
+    font-size: 2.1em;
+}
+
+main h2{
+    font-size: 2.1em;
+    text-align: center;
+}
+
+main h2.main_desc{
+    text-align: left;
+    font-size: 1.7em;
+}
+
+main h3{
+    font-size: 1.7em;
+}
+
+main h4{
+    font-size: 1.4em;
+}
+
+main p{
+    font-size: 1.1em;
+}
+
+main blockquote{
+    font-size: 1.1em;
+    margin-left: 0.2em;
+    padding-left: 0.6em;
+    color: black;
+    border-left: black 3px solid;
+}
+
+hr{
+    border: 1px solid lightgray;
+}
+
+a{
+    color: var(--highlight-color);
+}
+
+.description_article{
+    color: gray;
+}
+
+input{
+    font-size: 0.9em;
+    font-family: "SF Pro Display", sans-serif;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    padding: 5px;
+    width: var(--width-input);
+}
+
+input:focus{
+    outline: none;
+    animation: 0.75s focus;
+    padding: 10px;
+}
+
+textarea{
+    font-size: 0.9em;
+    font-family: "SF Pro Display", sans-serif;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    padding: 5px;
+    width: var(--width-textarea);
+}
+
+textarea:focus{
+    outline: none;
+    animation: 0.75s focus;
+    padding: 10px;
+}
+
+.button{
+    cursor: pointer;
+    width: 115px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #efefef;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    padding: 5px;
+}
+
+.button:hover{
+    background-color: white;
+    animation: 0.75s button;
+    padding: 10px;
+    width: 135px;
+}
+
+.button:active{
+    color: var(--highlight-color);
+}
+
+p.button a{
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+iframe{
+    width: var(--width-map);
+    height: var(--height-map);
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+}
+
+@media all and (max-width: 1024px){
+    body{
+        --animation-link-mini: 0.9em;
+        --animation-link-max: 1em;
+    }
+
+    main{
+        padding: 10px 10vw;
+    }
+
+    main h1,h2{
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    main h2.main_desc{
+        font-size: 1.55em;
+    }
+    
+    main h3{
+        font-size: 1.5em;
+    }
+    
+    main h4{
+        font-size: 1.2em;
+    }
+    
+    main p,label{
+        font-size: 0.9em;
+    }
+    
+    main details summary{
+        font-size: 1.1em;
+        margin: 15px;
+    }
+
+    main #content{
+        margin: 0.5em 1.5em;
+    }
+
+    header{
+        --height: 75px;
+    }
+
+    header h1{
+        font-size: 1.6em;
+    }
+
+    header a{
+        font-size: 1em;
+    }
+
+    header img{
+        --height: 75px;
+    }
+
+    nav{
+        font-size: 0.9em;
+    }
+
+    main details{
+        margin: 15px;
+    }
+
+    footer a{
+        margin: 0 10px 0 10px;
+    }
+
+    body footer{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 700px){
+    body{
+        background: none;
+        background-color: white;
+        --width-input: 170px;
+        --width-textarea: 300px;
+        --width-map: 275px;
+        --height-map: 200px;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1{
+        font-size: 1.2em;
+    }
+
+    header a{
+        display: none;
+    }
+
+    main h1,h2{
+        font-size: 1.4em;
+    }
+
+    main h2.main_desc{
+        font-size: 1.35em;
+    }
+
+    main h3{
+        font-size: 1.3em;
+    }
+    
+    main h4{
+        font-size: 1.2em;
+    }
+    
+    main p,label{
+        font-size: 0.9em;
+    }
+    
+    main details summary{
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    main a:hover{
+        animation: none;
+    }
+
+    input{
+        font-size: 0.8em;
+    }
+
+    textarea{
+        font-size: 0.8em;
+    }
+    
+    body footer{
+        font-size: 0.70em;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+footer{
+    background: var(--header-color);
+    
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    align-items: center;
+    height: 7vh;
+}
+
+footer #images{
+    width: 12.5vw;
+    display: flex;
+    justify-content: space-between;
+    justify-self: right;
+}
+
+footer #images img{
+    width: 4vh;
+    height: 4vh;
+}
+
+footer p{
+    justify-self: flex-end;
+    font-size: 0.75em;
+    opacity: 0.4;
+}
+
+#content{
+    margin: 0.5rem 3rem 5rem 3rem;
+}
+
+#content h1{
+    text-align: center;
+}
+
+@keyframes focus{
+    from{
+        padding: 5px;
+    }
+    to{
+        padding: 10px;
+    }
+}
+
+@keyframes button{
+    from{
+        padding: 5px;
+        width: 115px;
+    }
+    to{
+        padding: 10px;
+        width: 135px;
+    }
+}
+
+@keyframes link{
+    from{
+        font-size: var(--animation-link-mini);
+    }
+    to{
+        font-size: var(--animation-link-max);
+    }
+}

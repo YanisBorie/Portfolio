@@ -1,0 +1,17 @@
+main{
+    color: black;
+    --highlight-color: #e3541a;
+}
+
+#content a{
+    color: var(--highlight-color);
+    display: block;
+}
+
+#content a:hover{
+    color: black;
+}
+
+/* #content h3 ~ p{
+    margin-left: 0.5em;
+} */

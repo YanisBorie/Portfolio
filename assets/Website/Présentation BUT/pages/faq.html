@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../css/faq.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/logo_onglet.png">
+        <title>IUT Lyon 1 - Questionnaire BUT</title>
+    </head>
+    <body>
+        <header>
+            <img src="../images/logo_iut2.png" alt="Logo de l'IUT">
+
+            <h1>BUT Informatique La Doua</h1>
+            <a href="https://iut.univ-lyon1.fr/" target="_blank">Site de l'IUT</a>
+        </header>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a class="border" href="faq.html">Questionnaire</a>
+            <a href="presentation_campus.html">Présentation campus</a>
+        </nav>
+        <main>
+            <section id="content">
+                <h2>Tout savoir sur notre BUT !</h2>
+                <p>
+                    Bonjour jeune étudiant, ici tu trouveras toutes les réponses à tes questions à 
+                    propos du BUT Informatique de l'Université Claude Bernard à Lyon 1 sur le site de la Doua !
+                </p>
+                <details>
+                    <summary>Qu’est-ce que le BUT ?</summary>
+                    <p>Le BUT, c'est-à-dire le Bachelor Universitaire de Technologie est un diplôme d’études supérieures réalisé en trois ans.</p>
+                </details>
+                <details>
+                    <summary>Qu’est-ce que le BUT Informatique ?</summary>
+                    <p>
+                        Le BUT Informatique est un diplôme ayant pour objectif de faire de vous 
+                        un informaticien qualifié dans plusieurs domaines. Pendant cette formation, 
+                        vous apprendrez des langages divers et variés, afin de vous former pour le monde de l’informatique.
+                    </p>
+                </details>
+                <details>
+                    <summary>Quels sont les principaux critères retenus pour la candidature ?</summary>
+                    <p>
+                        Lors de votre candidature, l’école dans laquelle vous postulerez s'intéressera 
+                        à des critères bien définis, tels que: votre niveau, respectivement en mathématiques, 
+                        en français, en philosophie puis en anglais.
+                    </p>
+                </details>
+                <details>
+                    <summary>Mon niveau n'est pas très correct pour les matières les plus importantes. Pourrai-je quand même accéder à la formation ?</summary>
+                    <p>
+                        Dans ce cas, le comportement, l'assiduité et le projet de formation motivé entrent 
+                        en compte dans la décision prise par l'IUT. Attention, même si vous émettez des doutes, 
+                        vous devriez quand même soumettre votre candidature.
+                    </p>
+                </details>
+                <details>
+                    <summary>Je n’ai jamais suivi de cours d’informatique, pourrai-je suivre cette formation sans problème ?</summary>
+                    <p>Au début du cursus, plusieurs cours sont dédiés à l'introduction de l'informatique aux élèves, 
+                        pour qu'ils puissent commencer l'informatique avec des bases solides ; par conséquent, 
+                        suivre ce cursus sans n'avoir jamais fait d'informatique est totalement possible et faisable.
+                    </p>
+                </details>
+                <details>
+                    <summary>Que fait-on précisément dans cette formation ?</summary>
+                    <p>Des cours relatifs à l'informatique (C, algorithmique, systèmes d'exploitation, bases de données, SQL) 
+                        et des cours plus généraux (communication, maths, économie) sont répartis sur environ 30 à 36h par semaine.
+                    </p>
+                </details>
+                <details>
+                    <summary>Comment puis-je accéder à l’IUT ?</summary>
+                    <p>Pour L'IUT Lyon 1 et pour la plupart des IUT publics, la candidature se fait via la plate-forme Parcoursup.</p>
+                </details>
+                <details>
+                    <summary>Comment se déroulent les cours ?</summary>
+                    <p>
+                        À l'IUT Lyon 1 pour le BUT Informatique, les semaines se déroulent la majeure partie du temps sous le format suivant :<br/><br/>
+                        Lundi : 8h-12h 14h-18h<br/>
+                        Mardi : 8h-12h 14h-18h<br/>
+                        Mercredi : 8h-12h 14h-18h<br/>
+                        Jeudi : 8h-12h 14h-18h<br/>
+                        Vendredi : 8h-12h 13h30-17h30<br/><br/>
+                        Tous les cours durent en deux heures (sauf rares exceptions) et seront soit des TD soit des TP. 
+                        Vous aurez environ, par semaine, un ou deux cours en amphithéâtre.
+                    </p>
+                </details>
+                <p>
+                    Si nous n'avons pas répondu à toutes vos questions, nous vous invitons à répondre au formulaire ci-dessous 
+                    en indiquant votre nom, votre prénom, votre email puis la question à laquelle vous souhaitez avoir une réponse.
+                </p>
+                <form action="envoie_serveur.php" method="post">
+                    <div>
+                        <label for="nom">Nom :</label><br/>
+                        <input type="text" name="name" id="nom" placeholder="Entrez ici votre nom." required>
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom :</label><br/>
+                        <input type="text" name="surname" id="prenom" placeholder="Entrez ici votre prénom." required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail :</label><br/>
+                        <input type="email" name="email" id="email" placeholder="Entrez ici votre e-mail." required>
+                    </div>
+                    <div>
+                        <label for="question">Question :</label><br/>
+                        <textarea name="question" id="question" placeholder="Entrez ici votre question." rows="6" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer" class="button">
+                    </div>
+                  </form>
+            </section>
+        </main>
+        <footer>
+            <div id="images">
+                <a href="https://www.facebook.com/UnivLyon1" target="_blank">
+                    <img src="../images/facebook.png" alt="Lien vers le Facebook de l'Université Lyon 1">
+                </a>
+                
+                <a href="https://www.twitter.com/UnivLyon1" target="_blank">
+                    <img src="../images/twitter.png" alt="Lien vers le Twitter de l'Université Lyon 1">
+                </a>
+    
+                <a href="https://www.youtube.com/UnivLyon1" target="_blank">
+                    <img src="../images/youtube.png" alt="Lien vers le YouTube de l'Université Lyon 1">
+                </a>
+    
+                <a href="https://www.instagram.com/univlyon1" target="_blank">
+                    <img src="../images/instagram.png" alt="Lien vers le Instagram de l'Université Lyon 1">
+                </a>
+            </div>
+            <p>© 2021 BORIE Yanis, LE GALL Bastien.</p>
+        </footer>
+
+    </body>
+</html>
