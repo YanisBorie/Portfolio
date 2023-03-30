@@ -65,6 +65,10 @@ nav ul,li,button {
     list-style: none;
 }
 
+nav ul {
+    padding: 0px;
+}
+
 nav button {
     background-color: var(--button-color);
     border-radius: 5rem;
