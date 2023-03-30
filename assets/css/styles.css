@@ -200,6 +200,38 @@ nav img {
     transition-duration: 500ms;
 }
 
+.competences article {
+    display: flex;
+    flex-direction: column;
+}
+
+.competences article div {
+    display: flex;
+    justify-content: center;
+}
+
+.competences article div img,button {
+    margin: 10px;
+}
+
+#s1 {
+    display: block;
+    height: 280px;
+    width: 650px;
+}
+
+#s2 {
+    display: none;
+    height: 280px;
+    width: 650px;
+}
+
+#s3 {
+    display: none;
+    height: 280px;
+    width: 650px;
+}
+
 form {
     display: flex;
     flex-direction: column;
