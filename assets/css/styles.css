@@ -85,6 +85,24 @@ nav button:hover {
     transition-duration: 500ms;
 }
 
+.button {
+    background-color: var(--button-color);
+    border-radius: 5rem;
+    border: solid 0px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-family: dekko;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.button:hover {
+    background-color: var(--buttonhover-color);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
 nav button a {
     text-decoration: none;
     color: var(--text-color);
@@ -133,6 +151,17 @@ nav img {
     margin-top: 50px;
 }
 
+.contact article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact article div + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .parcours article {
     display: flex;
     justify-content: space-around;
@@ -169,6 +198,32 @@ nav img {
 .projets article a img:hover {
     opacity: 0.5;
     transition-duration: 500ms;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 15px 0px 15px 15px;
+    width: 400px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+textarea {
+    border: none;
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 15px 0px 15px 15px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    resize: none;
 }
 
 @keyframes slidein {
