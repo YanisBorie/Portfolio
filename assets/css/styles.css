@@ -136,6 +136,7 @@ nav img {
 .parcours article {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .parcours article div {
@@ -147,6 +148,7 @@ nav img {
     border-left: solid 3px;
     border-radius: 0.75rem;
     height: 150px;
+    margin: 8px;
     max-width: 350px;
 }
 
