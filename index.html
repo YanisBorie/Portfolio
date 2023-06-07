@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Site de Yanis Borie</title>
 </head>
+
 <body>
     <nav>
         <img src="assets/images/maTete.jpg" alt="Photo de Yanis Borie">
         <h1>Yanis Borie</h1>
         <h2>Étudiant</h2>
         <ul>
-            <li><button><a href="#presentation">Présentation</a></button></li>
-            <li><button><a href="#parcours">Parcours</a></button></li>
-            <li><button><a href="#projets">Projets</a></button></li>
-            <li><button><a href="#competences">Compétences</a></button></li>
-            <li><button><a href="#contact">Contact</a></button></li>
+            <li><a href="#presentation"><button>Présentation</button></a></li>
+            <li><a href="#parcours"><button>Parcours</button></a></li>
+            <li><a href="#projets"><button>Projets</button></a></li>
+            <li><a href="#competences"><button>Compétences</button></a></li>
+            <li><a href="#contact"><button>Contact</button></a></li>
         </ul>
     </nav>
     <main>
@@ -24,12 +26,14 @@
             <hr>
             <div>
                 Bonjour je suis Yanis Borie, étudiant en informatique à l'IUT Lyon 1.</br>
-                J'ai 19 ans, je ne pratique pas de sport mais j'aime bien le volley. J'aime aussi 
+                J'ai 19 ans, je ne pratique pas de sport mais j'aime bien le volley. J'aime aussi
                 la culture japonaise nottament avec les animés, les mangas ou bien encore les manhwas.</br></br>
-                Niveau informatique, ce qui me plait le plus c'est le développement web. J'aime beaucoup ça 
-                et comme vous pourrez le voir dans la catégorie "Projets" je n'ai mis que ça. Et je pense qu'actuellement
+                Niveau informatique, ce qui me plait le plus c'est le développement web. J'aime beaucoup ça
+                et comme vous pourrez le voir dans la catégorie "Projets" je n'ai mis que ça. Et je pense
+                qu'actuellement
                 mon langage préféré sera sans doute Javascript.</br></br>
-                En plus du développement web, et de la culture japonaise, j'aime beaucoup les jeux vidéos. Que ce soit du Pokémon,
+                En plus du développement web, et de la culture japonaise, j'aime beaucoup les jeux vidéos. Que ce soit
+                du Pokémon,
                 du Zelda ou bien du Valorant.
             </div>
         </section>
@@ -38,24 +42,32 @@
             <hr>
             <article>
                 <fieldset>
-                    <legend><h2>BUT Informatique</h2></legend>
-                    Etudiant à l'Université Claude Bernard Lyon 1 depuis 2021.<br/>
+                    <legend>
+                        <h2>BUT Informatique</h2>
+                    </legend>
+                    Etudiant à l'Université Claude Bernard Lyon 1 depuis 2021.<br />
                     Parcours Administration, Gestion et Exploitation de Données.
                 </fieldset>
                 <fieldset>
-                    <legend><h2>BDE Informatique</h2></legend>
-                    Chargé de mission Évènementiel du  26 Mars 2022 au 24 Mars 2023.</br>
+                    <legend>
+                        <h2>BDE Informatique</h2>
+                    </legend>
+                    Chargé de mission Évènementiel du 26 Mars 2022 au 24 Mars 2023.</br>
                     Organisation d'évènements pour les étudiants du département informatique.
                 </fieldset>
                 <fieldset>
-                    <legend><h2>Adjoint Technique</h2></legend>
+                    <legend>
+                        <h2>Adjoint Technique</h2>
+                    </legend>
                     Chargé des Espaces Vert du 20 Juin au 08 Juillet 2022.</br>
                     Tonte, arrosage, plantation et désherbage au sein de la commune de Genay.
                 </fieldset>
                 <fieldset>
-                    <legend><h2>Baccalauréat STI2D</h2></legend>
-                    Lycéen au Lycée Rosa Parks à Neuville-sur-Saône de 2018 à 2021.<br/>
-                    Option Système d'Information et Numérique.<br/>
+                    <legend>
+                        <h2>Baccalauréat STI2D</h2>
+                    </legend>
+                    Lycéen au Lycée Rosa Parks à Neuville-sur-Saône de 2018 à 2021.<br />
+                    Option Système d'Information et Numérique.<br />
                     Mention Bien.
                 </fieldset>
             </article>
@@ -121,27 +133,16 @@
             <hr>
             <article>
                 <div>
-                    <form action="" method="post">
-                        <label for="name">Nom :</label>
-                        <input type="text" name="name" required>
-                        <label for="email">Email :</label>
-                        <input type="email" name="email" required>
-                        <label for="objet">Objet :</label>
-                        <input type="text" name="objet" required>
-                        <label for="message">Message :</label>
-                        <textarea name="message" rows="10" required></textarea>
-                        <input type="submit" value="Envoyer" class="button">
-                    </form>
-                </div>
-                <div>
-                    <h2>Contact</h2>
-                    ✉️ yanis.borie69@gmail.com</br>
-                    📞 06 60 99 47 53</br>
-                    📍 France, 69730 Genay
+                    <i class="fa-solid fa-envelope fa-beat"></i>
+                    <h2>Vous souhaitez me contacter par mail ?<br>Cliquer sur ce boutton !</h2>
+                    <a href="mailto:yanis.borie69@gmail.com?subject=[PORTFOLIO] <insérer votre message>"><button
+                            class="button">CONTACTER</button></a>
                 </div>
             </article>
         </section>
     </main>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/5fb9f9b90e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
