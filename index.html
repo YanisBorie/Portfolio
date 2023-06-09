@@ -78,24 +78,14 @@
             <hr>
             <div>Ce trouve ci-dessous tous les projets de site web que j'ai mené depuis que j'ai commencé à coder.</div>
             <article>
-                <a href="assets/Website/Site STI2D/Index.html" target="_blank">
-                    <img src="assets/images/Laya.png" alt="Projet Laya">
-                </a>
-                <a href="assets/Website/Présentation BUT/index.html" target="_blank">
-                    <img src="assets/images/presentationbut.png" alt="Projet présentation BUT">
-                </a>
-                <a href="assets/Website/Snake/index.html" target="_blank">
-                    <img src="assets/images/snake.png" alt="Projet Snake">
-                </a>
-                <a href="assets/Website/Site STI2D/Index.html" target="_blank">
-                    <img src="assets/images/caseus.png" alt="Projet CASEUS">
-                </a>
-                <a href="assets/Website/Site STI2D/Index.html" target="_blank">
-                    <img src="assets/images/pendu.png" alt="Projet Pendu">
-                </a>
-                <a href="assets/Website/Site STI2D/Index.html" target="_blank">
-                    <img src="assets/images/shoppinglist.png" alt="Projet ShoppingList">
-                </a>
+                <img src="assets/images/projets/laya.png" alt="Projet Laya" onclick="popup('Laya')">
+                <img src="assets/images/projets/presentationbut.png" alt="Projet présentation BUT"
+                    onclick="popup('BUT')">
+                <img src="assets/images/projets/snake.png" alt="Projet Snake" onclick="popup('Snake')">
+                <img src="assets/images/projets/caseus.png" alt="Projet CASEUS" onclick="popup('Caseus')">
+                <img src="assets/images/projets/pendu.png" alt="Projet Pendu" onclick="popup('Pendu')">
+                <img src="assets/images/projets/shoppinglist.png" alt="Projet ShoppingList"
+                    onclick="popup('ShoppingList')">
             </article>
             <div>Ce trouve ci-dessous toutes les infographies que j'ai réalisé pour mon association étudiante.</div>
             <article>
@@ -156,6 +146,175 @@
             </article>
         </section>
     </main>
+
+    <!--
+
+        POPUP
+
+    -->
+
+    <article class="popupbackground" id="popupbackground">
+        <div class="popup" id="popupLaya">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Laya</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/laya.png" alt="Projet Laya">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Le projet Laya est un projet en groupe que j'ai réalisé en Terminale STI2D, le but était
+                            de rendre cette application web intéractif avec une maison, on devait pouvoir manipuler
+                            notre maison avec ce site web. Le projet n'a pas pu être finalisé à cause du covid, ce qui
+                            fais que nous aurons que le front-end.
+                        </p>
+                        <a href="assets/Website/Site STI2D/Index.html" target="_blank">Accéder au projet >>></a>
+                        <div class="langages">
+                            <h2 class="badgeHTML">HTML</h2>
+                            <h2 class="badgeCSS">CSS</h2>
+                            <h2 class="badgeJS">Javascript</h2>
+                            <h2 class="badgePHP">PHP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupBUT">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Présentation BUT Information Lyon 1</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/presentationbut.png" alt="Projet Présentation BUT Info Lyon 1">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Ce projet avait pour but de nous initier à l'HTML et au CSS, tout en utilisant git pour la
+                            gestion du travail en équipe. Pour ce projet nous avons donc par équipe de 2 présenter le
+                            BUT Information de l'IUT Lyon 1, l'université dans laquelle je suis ma formation.
+                        </p>
+                        <a href="assets/Website/Présentation BUT/index.html" target="_blank">Accéder au projet >>></a>
+                        <div class="langages">
+                            <h2 class="badgeHTML">HTML</h2>
+                            <h2 class="badgeCSS">CSS</h2>
+                            <h2 class="badgePHP">PHP</h2>
+                            <h2 class="badgeGIT">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupSnake">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Snake</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/snake.png" alt="Projet Snake">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Le projet Snake est un travail que nous avons effectué par équipe de 2, il avait pour but de
+                            nous faire manipuler JavaScript que nous venions tout juste d'apprendre. Le but du projet
+                            étant donc de reproduire le célèbre jeu Snake.
+                        </p>
+                        <a href="assets/Website/Snake/index.html" target="_blank">Accéder au projet >>></a>
+                        <div class="langages">
+                            <h2 class="badgeHTML">HTML</h2>
+                            <h2 class="badgeCSS">CSS</h2>
+                            <h2 class="badgeJS">Javascript</h2>
+                            <h2 class="badgeGIT">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupCaseus">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Caseus</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/caseus.png" alt="Projet Caseus">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Le projet Caseus était un gros projet de semestre que nous avons fait par équipe de 4. Le
+                            but était de créer une application web plutôt complète qu'on pourrait utiliser en entreprise
+                            ou pour une billeterie, notre choix s'est porté sur une application web de gestion
+                            administrative d'une entreprise. Le but était de comfirmer nos compétences en PHP et
+                            JavaScript que nous venions d'apprendre.
+                        </p>
+                        <div class="langages">
+                            <h2 class="badgeHTML">HTML</h2>
+                            <h2 class="badgeCSS">CSS</h2>
+                            <h2 class="badgeJS">Javascript</h2>
+                            <h2 class="badgePHP">PHP</h2>
+                            <h2 class="badgeGIT">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupPendu">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Pendu</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/pendu.png" alt="Projet Pendu">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Le pendu est un projet que nous avons réalisé seul dans le but d'apprendre PHP, nous devions
+                            donc reproduire le célèbre jeu du pendu.
+                        </p>
+                        <div class="langages">
+                            <h2 class="badgeHTML">HTML</h2>
+                            <h2 class="badgeCSS">CSS</h2>
+                            <h2 class="badgePHP">PHP</h2>
+                            <h2 class="badgeGIT">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupShoppingList">
+            <div>
+                <img src="assets/images/croix.png" alt="croix" onclick="popdown()">
+            </div>
+            <h2>Shopping List</h2>
+            <div>
+                <div class="contenu-projet">
+                    <div>
+                        <img src="assets/images/projets/shoppinglist.png" alt="Projet Shopping List">
+                    </div>
+                    <div class="information-projet">
+                        <p>
+                            Shopping List est un projet que nous avons réalisé par équipe de 2 dans le but d'apprendre à
+                            utiliser le framework Symfony. Le but de l'application étant de pouvoir lister plusieurs
+                            listes de courses différentes qu'on pourra consulter et modifier depuis n'importe où.
+                        </p>
+                        <div class="langages">
+                            <h2 class="badgeSF">Symfony</h2>
+                            <h2 class="badgeGIT">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/5fb9f9b90e.js" crossorigin="anonymous"></script>
 </body>

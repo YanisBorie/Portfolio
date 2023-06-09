@@ -209,7 +209,7 @@ nav img {
     justify-content: center;
 }
 
-.projets article a img {
+.projets article img {
     margin: 15px;
     border: solid 3px var(--text-color);
     border-radius: 0.75rem;
@@ -217,8 +217,9 @@ nav img {
     width: 180px;
 }
 
-.projets article a img:hover {
+.projets article img:hover {
     opacity: 0.5;
+    cursor: pointer;
     transition-duration: 500ms;
 }
 
@@ -258,24 +259,6 @@ button {
     margin: 10px;
 }
 
-#s1 {
-    display: block;
-    height: 280px;
-    width: 650px;
-}
-
-#s2 {
-    display: none;
-    height: 280px;
-    width: 650px;
-}
-
-#s3 {
-    display: none;
-    height: 280px;
-    width: 650px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -300,6 +283,125 @@ textarea {
     background-color: var(--main-color);
     color: var(--text-color);
     resize: none;
+}
+
+.popupbackground {
+    display: none;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+    background-color: var(--main-color);
+    z-index: 2;
+    height: 40vw;
+    width: 70vw;
+    border-radius: 2vw;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.popup div:nth-child(1) {
+    text-align: right;
+}
+
+.popup div:nth-child(1) img {
+    width: 4%;
+    cursor: pointer;
+}
+
+.popup div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.information-projet {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.popup>h2 {
+    font-size: 44px;
+    margin-bottom: 50px;
+}
+
+.popup p,
+h2,
+a {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.popup a {
+    text-decoration: none;
+    margin: 15px;
+}
+
+.popup a:hover {
+    transition-duration: 1s;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+.contenu-projet {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenu-projet div {
+    padding: 15px;
+}
+
+.contenu-projet div img {
+    border: 2px solid var(--text-color);
+    border-radius: 0.75em;
+    width: 100% !important;
+}
+
+.langages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.langages h2 {
+    padding: 10px;
+    border-radius: 0.75em;
+}
+
+.badgeHTML {
+    background-color: #E44D26;
+}
+
+.badgeCSS {
+    background-color: #264DE4;
+}
+
+.badgeJS {
+    background-color: #D5BA31;
+}
+
+.badgePHP {
+    background-color: #787CB4;
+}
+
+.badgeSF {
+    background-color: black;
+}
+
+.badgeGIT {
+    background-color: #F05030;
 }
 
 @keyframes slidein {
