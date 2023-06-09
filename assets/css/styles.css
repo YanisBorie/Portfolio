@@ -232,6 +232,7 @@ nav img {
 .competences article div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 0.75rem;
@@ -252,6 +253,11 @@ nav img {
     margin: 15px;
     height: 150px;
     width: 150px;
+}
+
+.competences article div p {
+    width: 170px;
+    text-align: center;
 }
 
 .competences article div img,
@@ -402,6 +408,15 @@ a {
 
 .badgeGIT {
     background-color: #F05030;
+}
+
+#textRealiser,
+#textOptimiser,
+#textAdministrer,
+#textGerer,
+#textConduire,
+#textCollaborer {
+    display: none;
 }
 
 @keyframes slidein {
