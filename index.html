@@ -14,11 +14,11 @@
         <h1>Yanis Borie</h1>
         <h2>Étudiant</h2>
         <ul>
-            <li><a href="#presentation"><button>Présentation</button></a></li>
-            <li><a href="#parcours"><button>Parcours</button></a></li>
-            <li><a href="#projets"><button>Projets</button></a></li>
-            <li><a href="#competences"><button>Compétences</button></a></li>
-            <li><a href="#contact"><button>Contact</button></a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -42,35 +42,61 @@
             <h1 id="parcours">Parcours</h1>
             <hr>
             <article>
-                <fieldset>
-                    <legend>
-                        <h2>BUT Informatique</h2>
-                    </legend>
-                    Etudiant à l'Université Claude Bernard Lyon 1 depuis 2021.<br />
-                    Parcours Administration, Gestion et Exploitation de Données.
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        <h2>BDE Informatique</h2>
-                    </legend>
-                    Chargé de mission Évènementiel du 26 Mars 2022 au 24 Mars 2023.</br>
-                    Organisation d'évènements pour les étudiants du département informatique.
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        <h2>Adjoint Technique</h2>
-                    </legend>
-                    Chargé des Espaces Vert du 20 Juin au 08 Juillet 2022.</br>
-                    Tonte, arrosage, plantation et désherbage au sein de la commune de Genay.
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        <h2>Baccalauréat STI2D</h2>
-                    </legend>
-                    Lycéen au Lycée Rosa Parks à Neuville-sur-Saône de 2018 à 2021.<br />
-                    Option Système d'Information et Numérique.<br />
-                    Mention Bien.
-                </fieldset>
+                <details open>
+                    <summary>Formatifs</summary>
+                    <h2>Bachelor Universitaire de Technologie Informatique</h2>
+                    <div>
+                        <p>IUT Lyon 1 site Doua | Depuis 2021.</p>
+                        <p>Parcours Réalisation d'Applications : Conception, Développement, Validation.</p>
+                    </div>
+                    <h2>Baccalauréat STI2D</h2>
+                    <div>
+                        <p>Lycée Rosa Parks Neuville-sur-Saône | De 2018 à 2021.</p>
+                        <p>Option Système d'Information et Numérique.</p>
+                        <p>Mention Bien.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Associatifs</summary>
+                    <h2><a href="https://etu.univ-lyon1.fr/activites/associations-etudiantes/student-club-association-des-bde-de-liut-lyon-1"
+                            target="_blank">Vice-président en charge
+                            de la Communication & des Partenariats</a></h2>
+                    <div>
+                        <p>Student Club - Fédération des BDE de l’IUT Lyon 1 | Depuis le 05 Juin 2023.</p>
+                        <p>Gestion de la communication sur les réseaux sociaux et des partenariats de l’association.</p>
+                    </div>
+                    <h2><a href="https://gaelis.fr" target="_blank">Formateur</a></h2>
+                    <div>
+                        <p>GAELIS - Groupement des Associations et Elus étudiants de Lyon Indépendants et Solidaires |
+                            Depuis le 08 Octobre 2023.</p>
+                        <p>Gestion de la communication sur les réseaux sociaux et des partenariats de l’association.</p>
+                    </div>
+                    <h2><a href="https://etu.univ-lyon1.fr/activites/associations-etudiantes/biosphere-association-des-etudiants-en-biologie-biochimie-geoscience"
+                            target="_blank">Membre Actif</a></h2>
+                    <div>
+                        <p>BIOSPHERE | Depuis le 18 Octobre 2023.</p>
+                        <p>Gestion de la communication sur les réseaux sociaux et des partenariats de l’association.</p>
+                    </div>
+                    <h2><a href="https://etu.univ-lyon1.fr/activites/associations-etudiantes/bde-info-association-des-etudiants-en-informatique-de-liut"
+                            target="_blank">Chargé de mission Évènementiel</a></h2>
+                    <div>
+                        <p>BDE Informatique de l’IUT Lyon 1 site Doua | Du 26 Mars 2022 au 24 Mars 2023.</p>
+                        <p>Organisation d'évènements pour les étudiants du département informatique.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Professionnels</summary>
+                    <h2>Stagiaire développeur Web</h2>
+                    <div>
+                        <p>Seven Sales & Marketing I Du 09 Mai 2023 au 30 Juin 2023.</p>
+                        <p>Création des sites web de l'entreprise.</p>
+                    </div>
+                    <h2>Adjoint Technique</h2>
+                    <div>
+                        <p>Espace Vert | Du 20 Juin au 08 Juillet 2022</p>
+                        <p>Tonte, arrosage, plantation et désherbage au sein de la commune de Genay.</p>
+                    </div>
+                </details>
             </article>
         </section>
         <section class="projets">
@@ -164,9 +190,8 @@
             <article>
                 <div>
                     <i class="fa-solid fa-envelope fa-beat"></i>
-                    <h2>Vous souhaitez me contacter par mail ?<br>Cliquer sur ce bouton !</h2>
-                    <a href="mailto:yanis.borie69@gmail.com?subject=[PORTFOLIO] <insérer votre message>"><button
-                            class="button">CONTACTER</button></a>
+                    <h2>Vous souhaitez me contacter par mail ?<br>Cliquez sur ce bouton !</h2>
+                    <a href="mailto:yanis.borie69@gmail.com?subject=[PORTFOLIO] <insérer votre message>">CONTACTER</a>
                 </div>
             </article>
         </section>
@@ -221,7 +246,7 @@
                         <p>
                             Ce projet avait pour but de nous initier à l'HTML et au CSS, tout en utilisant git pour la
                             gestion du travail en équipe. Pour ce projet nous avons donc par équipe de 2 présenter le
-                            BUT Information de l'IUT Lyon 1, l'université dans laquelle je suis ma formation.
+                            BUT Informatique de l'IUT Lyon 1, l'université dans laquelle je suis ma formation.
                         </p>
                         <a href="assets/Website/Présentation BUT/index.html" target="_blank">Accéder au projet >>></a>
                         <div class="langages">
