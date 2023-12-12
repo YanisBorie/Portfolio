@@ -448,10 +448,6 @@ a {
     background-color: black;
 }
 
-.badgeGIT {
-    background-color: #F05030;
-}
-
 .color {
     color: var(--button-color);
 }
